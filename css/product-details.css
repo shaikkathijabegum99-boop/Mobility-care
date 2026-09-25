@@ -93,14 +93,16 @@
 }
 
 body.light .product-detail-hero-overlay {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(243, 241, 236, .96) 0%,
-            rgba(243, 241, 236, .82) 45%,
-            rgba(243, 241, 236, .42) 100%
-        );
+  
+    background: linear-gradient(
+        90deg,
+        rgba(14, 14, 17, 0.72) 0%,
+        rgba(14, 14, 17, 0.58) 38%,
+        rgba(14, 14, 17, 0.38) 70%,
+        rgba(14, 14, 17, 0.12) 100%
+    );
 }
+
 
 .product-detail-hero .container {
     position: relative;
@@ -120,12 +122,13 @@ body.light .product-detail-hero-overlay {
     font-weight: 500;
     line-height: .95;
     letter-spacing: -.065em;
+    color: white;
 }
 
 .product-detail-hero-content p {
     max-width: 680px;
     margin-top: 24px;
-    color: var(--text-muted);
+    color: white;
     font-size: 1rem;
     line-height: 1.75;
 }
@@ -769,12 +772,14 @@ body.light .product-detail-hero-overlay {
     }
 
     body.light .product-detail-hero-overlay {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(243, 241, 236, .94),
-                rgba(243, 241, 236, .72)
-            );
+          background: linear-gradient(
+        90deg,
+        rgba(14, 14, 17, 0.72) 0%,
+        rgba(14, 14, 17, 0.58) 38%,
+        rgba(14, 14, 17, 0.38) 70%,
+        rgba(14, 14, 17, 0.12) 100%
+    );
+}
     }
 
     .product-detail-hero-content {
@@ -960,7 +965,7 @@ body.light .product-detail-hero-overlay {
         width: 100%;
     }
 
-}
+
 
 
 
@@ -1203,6 +1208,7 @@ body.light .product-detail-hero-overlay {
 .product-detail-hero-content p {
     font-size: .9rem;
     line-height: 1.7;
+    color:white;
 }
 
 .product-detail-hero-content .section-eyebrow {
@@ -1590,4 +1596,293 @@ body.light .product-detail-hero-overlay {
         text-align: center;
     }
 
+}
+/* Feature Cards */
+.product-details-page .product-feature-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.product-details-page .product-feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .35s ease;
+}
+
+.product-details-page .product-feature-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, .5);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .16);
+    background: var(--surface-alt);
+}
+
+.product-details-page .product-feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.product-details-page .product-feature-icon {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.product-details-page .product-feature-card:hover .product-feature-icon {
+    transform: translateY(-3px) scale(1.08);
+    background: var(--secondary);
+    color: var(--secondary-text);
+}
+
+
+/* Care Cards */
+.product-details-page .care-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.product-details-page .care-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .35s ease;
+}
+
+.product-details-page .care-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, .5);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .16);
+    background: var(--surface-alt);
+}
+
+.product-details-page .care-card:hover::before {
+    transform: scaleX(1);
+}
+
+.product-details-page .care-icon {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.product-details-page .care-card:hover .care-icon {
+    transform: translateY(-3px) scale(1.08);
+    background: var(--secondary);
+    color: var(--secondary-text);
+}
+
+
+/* Price Box */
+.product-details-page .product-price-box {
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.product-details-page .product-price-box:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 12px 30px rgba(255, 122, 41, .14);
+}
+
+
+/* Specifications Card */
+.product-details-page .product-specifications-card {
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.product-details-page .product-specifications-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .15);
+}
+
+.product-details-page .product-specifications-card:hover
+.specification-card-header {
+    background: var(--tint);
+}
+
+
+/* Specification Rows */
+.product-details-page .specification-item {
+    transition:
+        background .25s ease,
+        padding-left .25s ease,
+        padding-right .25s ease;
+}
+
+.product-details-page .specification-item:hover {
+    background: var(--tint);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.product-details-page .specification-item:hover
+.specification-value {
+    color: var(--secondary);
+}
+
+
+/* Product Main Image */
+.product-details-page .product-image-frame {
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.product-details-page .product-image-frame:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .15);
+}
+
+
+/* Suitable Image */
+.product-details-page .product-suitable-image {
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.product-details-page .product-suitable-image:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .15);
+}
+
+
+/* CTA Card */
+.product-details-page .product-detail-cta-inner {
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.product-details-page .product-detail-cta-inner:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 122, 41, .4);
+    box-shadow:
+        0 18px 42px rgba(255, 122, 41, .14);
+}
+
+
+/* Buttons */
+.product-details-page .btn {
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.product-details-page .btn:hover {
+    transform: translateY(-2px);
+}
+
+.product-details-page .btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* Light Mode */
+body.light .product-details-page .product-feature-card:hover,
+body.light .product-details-page .care-card:hover {
+    background: var(--surface);
+    box-shadow:
+        0 16px 38px rgba(20, 20, 26, .10),
+        0 8px 24px rgba(255, 122, 41, .10);
+}
+
+body.light .product-details-page .product-price-box:hover,
+body.light .product-details-page .product-specifications-card:hover,
+body.light .product-details-page .product-image-frame:hover,
+body.light .product-details-page .product-suitable-image:hover,
+body.light .product-details-page .product-detail-cta-inner:hover {
+    box-shadow:
+        0 16px 38px rgba(20, 20, 26, .10),
+        0 8px 24px rgba(255, 122, 41, .10);
+}
+
+
+/* RTL */
+html[dir="rtl"] .product-details-page .product-feature-card::before,
+html[dir="rtl"] .product-details-page .care-card::before {
+    transform-origin: right;
+}
+
+html[dir="rtl"] .product-details-page .specification-item:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+html[dir="rtl"] .product-details-page .btn:hover i {
+    transform: translateX(-4px);
+}
+
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .product-details-page .product-feature-card,
+    .product-details-page .care-card,
+    .product-details-page .product-feature-icon,
+    .product-details-page .care-icon,
+    .product-details-page .product-price-box,
+    .product-details-page .product-specifications-card,
+    .product-details-page .specification-item,
+    .product-details-page .product-image-frame,
+    .product-details-page .product-suitable-image,
+    .product-details-page .product-detail-cta-inner,
+    .product-details-page .btn {
+        transition: none;
+    }
+
+    .product-details-page .product-feature-card:hover,
+    .product-details-page .care-card:hover,
+    .product-details-page .product-price-box:hover,
+    .product-details-page .product-specifications-card:hover,
+    .product-details-page .product-image-frame:hover,
+    .product-details-page .product-suitable-image:hover,
+    .product-details-page .product-detail-cta-inner:hover,
+    .product-details-page .btn:hover {
+        transform: none;
+    }
 }

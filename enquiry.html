@@ -238,12 +238,22 @@
 
         .enquiry-brand-subtitle {
             font-family: var(--mono);
-            font-size: 0.58rem;
+            font-size: 0.68rem;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: var(--text-muted);
+            color: black;
+            font-weight: bold;
         }
 
+/* Brand subtitle — Dark Mode */
+.enquiry-brand-subtitle {
+    color: #FFFFFF;
+}
+
+/* Keep muted color in Light Mode */
+body.light .enquiry-brand-subtitle {
+    color: black;
+}
 
         .enquiry-controls {
             display: flex;
@@ -606,7 +616,441 @@
                 width: 38px;
                 height: 38px;
             }
-        }
+        }/* =========================================================
+   ENQUIRY PAGE — SCREEN FIT & RESPONSIVE SIZING
+========================================================= */
+
+/* Prevent the page from becoming unnecessarily tall */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+.enquiry-page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 24px 20px;
+}
+
+/* Main card */
+.enquiry-card {
+    padding: 28px 32px;
+}
+
+/* Controls */
+.enquiry-controls {
+    margin-bottom: 12px;
+}
+
+/* Brand */
+.enquiry-brand {
+    margin-bottom: 18px;
+}
+
+.enquiry-brand-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+}
+
+.enquiry-brand-name {
+    font-size: 1.25rem;
+}
+
+/* Header */
+.enquiry-header {
+    margin-bottom: 20px;
+}
+
+.enquiry-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.enquiry-header p:last-child {
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+/* Form */
+.enquiry-form {
+    gap: 14px;
+}
+
+.form-row {
+    gap: 14px;
+}
+
+.form-group {
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.74rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+}
+
+.form-group input,
+.form-group select {
+    height: 42px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+/* Submit */
+.enquiry-submit {
+    min-height: 46px;
+    padding: 10px 18px;
+    font-size: 0.84rem;
+}
+
+/* Privacy */
+.privacy-note {
+    font-size: 0.64rem;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .enquiry-page {
+        padding: 20px 16px;
+    }
+
+    .enquiry-wrapper {
+        max-width: 620px;
+    }
+
+    .enquiry-card {
+        padding: 26px 28px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .enquiry-page {
+        min-height: 100dvh;
+        padding: 14px 12px;
+        align-items: center;
+    }
+
+    .enquiry-wrapper {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .enquiry-card {
+        padding: 20px 18px;
+        border-radius: 22px;
+    }
+
+    .enquiry-controls {
+        margin-bottom: 12px;
+    }
+
+    .nav-icon-btn.text-btn,
+    .control-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .enquiry-brand {
+        margin-bottom: 14px;
+        gap: 9px;
+    }
+
+    .enquiry-brand-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    .enquiry-brand-name {
+        font-size: 1.15rem;
+    }
+
+    .enquiry-brand-subtitle {
+        font-size: 0.52rem;
+    }
+
+    .enquiry-header {
+        margin-bottom: 16px;
+    }
+
+    .enquiry-eyebrow {
+        margin-bottom: 5px;
+        font-size: 0.6rem;
+    }
+
+    .enquiry-header h1 {
+        margin-bottom: 7px;
+        font-size: 1.75rem;
+    }
+
+    .enquiry-header p:last-child {
+        font-size: 0.78rem;
+        line-height: 1.5;
+    }
+
+    .enquiry-form {
+        gap: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .form-group {
+        gap: 4px;
+    }
+
+    .form-group label {
+        font-size: 0.7rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 40px;
+        padding: 8px 11px;
+        font-size: 0.76rem;
+    }
+
+    .form-group textarea {
+        min-height: 85px;
+        padding: 9px 11px;
+        font-size: 0.76rem;
+    }
+
+    .enquiry-submit {
+        min-height: 43px;
+        margin-top: 0;
+        padding: 9px 16px;
+        font-size: 0.8rem;
+    }
+
+    .privacy-note {
+        font-size: 0.6rem;
+        line-height: 1.35;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .enquiry-page {
+        padding: 8px 8px;
+    }
+
+    .enquiry-card {
+        padding: 16px 14px;
+        border-radius: 18px;
+    }
+
+    .enquiry-controls {
+        gap: 6px;
+        margin-bottom: 9px;
+    }
+
+    .nav-icon-btn.text-btn,
+    .control-btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-icon-btn.text-btn {
+        font-size: 0.58rem;
+    }
+
+    .control-btn i {
+        font-size: 0.75rem;
+    }
+
+    .enquiry-brand {
+        margin-bottom: 11px;
+    }
+
+    .enquiry-brand-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+
+    .enquiry-brand-name {
+        font-size: 1.05rem;
+    }
+
+    .enquiry-brand-subtitle {
+        font-size: 0.47rem;
+    }
+
+    .enquiry-header {
+        margin-bottom: 13px;
+    }
+
+    .enquiry-eyebrow {
+        font-size: 0.55rem;
+    }
+
+    .enquiry-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .enquiry-header p:last-child {
+        font-size: 0.7rem;
+    }
+
+    .enquiry-form {
+        gap: 9px;
+    }
+
+    .form-row {
+        gap: 9px;
+    }
+
+    .form-group {
+        gap: 3px;
+    }
+
+    .form-group label {
+        font-size: 0.65rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 37px;
+        padding: 7px 9px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .form-group textarea {
+        min-height: 70px;
+        padding: 8px 9px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .enquiry-submit {
+        min-height: 39px;
+        font-size: 0.74rem;
+        border-radius: 999px;
+    }
+
+    .privacy-note {
+        font-size: 0.55rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SHORT SCREENS
+========================================================= */
+
+@media (max-height: 700px) and (min-width: 701px) {
+
+    .enquiry-page {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .enquiry-card {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .enquiry-brand {
+        margin-bottom: 10px;
+    }
+
+    .enquiry-header {
+        margin-bottom: 12px;
+    }
+
+    .enquiry-form {
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 38px;
+    }
+
+    .form-group textarea {
+        min-height: 75px;
+    }
+
+    .enquiry-submit {
+        min-height: 42px;
+    }
+}
+
+
+/* =========================================================
+   VERY SHORT MOBILE SCREENS
+========================================================= */
+
+@media (max-height: 700px) and (max-width: 700px) {
+
+    .enquiry-page {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .enquiry-card {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .enquiry-controls {
+        margin-bottom: 6px;
+    }
+
+    .enquiry-brand {
+        margin-bottom: 8px;
+    }
+
+    .enquiry-header {
+        margin-bottom: 9px;
+    }
+
+    .enquiry-form {
+        gap: 7px;
+    }
+
+    .form-row {
+        gap: 7px;
+    }
+
+    .form-group textarea {
+        min-height: 60px;
+    }
+
+    .enquiry-submit {
+        min-height: 36px;
+    }
+}
 
     </style>
 </head>

@@ -226,18 +226,7 @@
         box-shadow .3s ease;
 }
 
-.insurance-option-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--secondary);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .3s ease;
-}
+
 
 .insurance-option-card:hover {
     transform: translateY(-6px);
@@ -2055,5 +2044,396 @@ body.light .insurance-option-btn.btn-outline:hover i {
     .documentation-card h3,
     .documentation-card p {
         text-align: center;
+    }
+}
+
+
+.insurance-page .insurance-option-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, .55);
+    box-shadow:
+        0 18px 42px rgba(255, 122, 41, .16),
+        0 0 0 1px rgba(255, 122, 41, .06);
+}
+
+.insurance-page .insurance-option-card::before {
+    transition: transform .35s ease;
+}
+
+.insurance-page .insurance-option-card:hover::before {
+    transform: scaleX(1);
+}
+
+.insurance-page .insurance-option-icon {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.insurance-page .insurance-option-card:hover .insurance-option-icon {
+    transform: translateY(-4px) scale(1.07);
+    background: var(--secondary);
+    color: var(--secondary-text);
+}
+
+.insurance-page .insurance-option-number {
+    transition: color .25s ease;
+}
+
+.insurance-page .insurance-option-card:hover .insurance-option-number {
+    color: var(--secondary-deep);
+}
+
+
+/* Featured Insurance Card */
+.insurance-page .insurance-option-card.featured:hover {
+    border-color: rgba(255, 122, 41, .65);
+    box-shadow:
+        0 20px 45px rgba(255, 122, 41, .20),
+        0 0 0 1px rgba(255, 122, 41, .08);
+}
+
+
+/* Insurance Option Button */
+.insurance-page .insurance-option-btn {
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.insurance-page .insurance-option-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 122, 41, .18);
+}
+
+.insurance-page .insurance-option-btn i {
+    transition:
+        transform .25s ease,
+        color .25s ease;
+}
+
+.insurance-page .insurance-option-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* Documentation Cards */
+.insurance-page .documentation-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.insurance-page .documentation-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .35s ease;
+}
+
+.insurance-page .documentation-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 122, 41, .5);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .14);
+    background: var(--surface-alt);
+}
+
+.insurance-page .documentation-card:hover::before {
+    transform: scaleX(1);
+}
+
+.insurance-page .documentation-icon {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.insurance-page .documentation-card:hover .documentation-icon {
+    transform: translateY(-3px) scale(1.07);
+    background: var(--secondary);
+    color: var(--secondary-text);
+}
+
+
+/* Process Image */
+.insurance-page .insurance-process-image {
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.insurance-page .insurance-process-image:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 16px 38px rgba(255, 122, 41, .14);
+}
+
+
+/* Process Steps */
+.insurance-page .insurance-step {
+    transition:
+        background .3s ease,
+        padding-left .3s ease,
+        padding-right .3s ease;
+}
+
+.insurance-page .insurance-step:hover {
+    background: var(--tint);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.insurance-page .insurance-step-number {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.insurance-page .insurance-step:hover .insurance-step-number {
+    transform: scale(1.07);
+    background: var(--secondary);
+    color: var(--secondary-text);
+    border-color: var(--secondary);
+    box-shadow: 0 6px 18px rgba(255, 122, 41, .18);
+}
+
+
+/* Insurance Note */
+.insurance-page .insurance-note {
+    padding: 28px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.insurance-page .insurance-note:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .35);
+    background: var(--surface);
+    box-shadow:
+        0 14px 32px rgba(255, 122, 41, .12);
+}
+
+.insurance-page .insurance-note-icon {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.insurance-page .insurance-note:hover .insurance-note-icon {
+    transform: scale(1.07);
+    background: var(--secondary);
+    color: var(--secondary-text);
+    border-color: var(--secondary);
+}
+
+
+/* FAQ Items */
+.insurance-page .insurance-faq-item {
+    transition:
+        background .25s ease,
+        padding-left .25s ease,
+        padding-right .25s ease;
+}
+
+.insurance-page .insurance-faq-item:hover {
+    background: var(--tint);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.insurance-page .insurance-faq-item summary i {
+    transition:
+        transform .3s ease,
+        color .25s ease;
+}
+
+.insurance-page .insurance-faq-item:hover summary i {
+    color: var(--secondary-deep);
+}
+
+.insurance-page .insurance-faq-item[open] summary i {
+    transform: rotate(45deg);
+}
+
+
+/* Final CTA Card */
+.insurance-page .insurance-cta-inner {
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.insurance-page .insurance-cta-inner:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 20px 45px rgba(255, 122, 41, .14);
+}
+
+
+/* CTA Buttons */
+.insurance-page .insurance-cta-actions .btn {
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.insurance-page .insurance-cta-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 122, 41, .16);
+}
+
+.insurance-page .insurance-cta-actions .btn i {
+    transition: transform .25s ease;
+}
+
+.insurance-page .insurance-cta-actions .btn:hover i {
+    transform: translateX(4px);
+}
+
+
+
+body.light .insurance-page .insurance-option-card:hover,
+body.light .insurance-page .documentation-card:hover {
+    background: var(--surface);
+    box-shadow:
+        0 18px 42px rgba(20, 20, 26, .10),
+        0 8px 24px rgba(255, 122, 41, .10);
+}
+
+body.light .insurance-page .insurance-note:hover {
+    background: var(--surface);
+    box-shadow:
+        0 14px 32px rgba(20, 20, 26, .08),
+        0 8px 20px rgba(255, 122, 41, .08);
+}
+
+body.light .insurance-page .insurance-faq-item:hover {
+    background: rgba(255, 122, 41, .06);
+}
+
+body.light .insurance-page .insurance-cta-inner:hover {
+    box-shadow:
+        0 20px 45px rgba(20, 20, 26, .10),
+        0 8px 24px rgba(255, 122, 41, .10);
+}
+
+
+
+html[dir="rtl"] .insurance-page .insurance-option-card::before,
+html[dir="rtl"] .insurance-page .documentation-card::before {
+    transform-origin: right;
+}
+
+html[dir="rtl"] .insurance-page .insurance-option-btn:hover i,
+html[dir="rtl"] .insurance-page .insurance-cta-actions .btn:hover i {
+    transform: translateX(-4px);
+}
+
+html[dir="rtl"] .insurance-page .insurance-step:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+html[dir="rtl"] .insurance-page .insurance-faq-item:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+/* =========================================================
+   MOBILE — KEEP HOVER SUBTLE
+========================================================= */
+
+@media (max-width: 639px) {
+
+    .insurance-page .insurance-option-card:hover,
+    .insurance-page .documentation-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .insurance-page .insurance-process-image:hover,
+    .insurance-page .insurance-note:hover,
+    .insurance-page .insurance-cta-inner:hover {
+        transform: translateY(-3px);
+    }
+
+    .insurance-page .insurance-step:hover {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .insurance-page .insurance-faq-item:hover {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .insurance-page .insurance-option-card,
+    .insurance-page .insurance-option-icon,
+    .insurance-page .insurance-option-btn,
+    .insurance-page .insurance-option-btn i,
+    .insurance-page .documentation-card,
+    .insurance-page .documentation-icon,
+    .insurance-page .insurance-process-image,
+    .insurance-page .insurance-step,
+    .insurance-page .insurance-step-number,
+    .insurance-page .insurance-note,
+    .insurance-page .insurance-note-icon,
+    .insurance-page .insurance-faq-item,
+    .insurance-page .insurance-faq-item summary i,
+    .insurance-page .insurance-cta-inner,
+    .insurance-page .insurance-cta-actions .btn,
+    .insurance-page .insurance-cta-actions .btn i {
+        transition: none !important;
+    }
+
+    .insurance-page .insurance-option-card:hover,
+    .insurance-page .documentation-card:hover,
+    .insurance-page .insurance-process-image:hover,
+    .insurance-page .insurance-note:hover,
+    .insurance-page .insurance-cta-inner:hover,
+    .insurance-page .insurance-option-btn:hover,
+    .insurance-page .insurance-cta-actions .btn:hover {
+        transform: none;
     }
 }

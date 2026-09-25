@@ -1461,4 +1461,403 @@ html[dir="rtl"] .about-page .btn:hover i {
     max-width: 320px;
     margin: 10px auto 0;
     text-align: center;
+}/* =========================================================
+   ABOUT PAGE — CARD HOVER EFFECTS
+========================================================= */
+
+/* Approach Cards */
+.about-page .approach-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.about-page .approach-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .35s ease;
+}
+
+.about-page .approach-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, .55);
+    box-shadow:
+        0 16px 40px rgba(255, 122, 41, .18);
+    background: var(--surface-alt);
+}
+
+.about-page .approach-card:hover::before {
+    transform: scaleX(1);
+}
+
+.about-page .approach-card:hover .approach-icon {
+    background: var(--secondary);
+    color: var(--secondary-text);
+    transform: scale(1.06);
+}
+
+.about-page .approach-icon {
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+/* Values Cards */
+.about-page .value-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.about-page .value-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .35s ease;
+}
+
+.about-page .value-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, .55);
+    box-shadow:
+        0 16px 40px rgba(255, 122, 41, .18);
+    background: var(--surface-alt);
+}
+
+.about-page .value-card:hover::before {
+    transform: scaleX(1);
+}
+
+.about-page .value-card:hover > i {
+    transform: translateY(-3px) scale(1.08);
+    color: var(--secondary-deep);
+}
+
+.about-page .value-card > i {
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+
+/* Team Cards */
+.about-page .team-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.about-page .team-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 122, 41, .55);
+    box-shadow:
+        0 18px 45px rgba(255, 122, 41, .20);
+}
+
+.about-page .team-card:hover .team-image img {
+    transform: scale(1.06);
+}
+
+.about-page .team-image {
+    overflow: hidden;
+}
+
+.about-page .team-image img {
+    transition: transform .5s ease;
+}
+
+
+/* Story Highlight */
+.about-page .story-highlight {
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.about-page .story-highlight:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .55);
+    box-shadow:
+        0 14px 35px rgba(255, 122, 41, .16);
+    background: var(--surface-alt);
+}
+
+.about-page .story-highlight:hover .highlight-icon {
+    transform: scale(1.08);
+    background: var(--secondary);
+    color: var(--secondary-text);
+}
+
+.about-page .highlight-icon {
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+
+/* Timeline Cards / Content */
+.about-page .timeline-content {
+    transition:
+        transform .3s ease,
+        padding-left .3s ease,
+        padding-right .3s ease;
+}
+
+.about-page .timeline-item:hover .timeline-content {
+    transform: translateX(5px);
+}
+
+.about-page .timeline-item:hover .timeline-marker {
+    background: var(--secondary);
+    color: var(--secondary-text);
+    transform: scale(1.06);
+    box-shadow:
+        0 0 0 6px var(--tint),
+        0 8px 25px rgba(255, 122, 41, .20);
+}
+
+
+/* Accessibility Image */
+.about-page .accessibility-image {
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.about-page .accessibility-image:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 122, 41, .45);
+    box-shadow:
+        0 16px 40px rgba(255, 122, 41, .16);
+}
+
+.about-page .accessibility-image img {
+    transition: transform .5s ease;
+}
+
+.about-page .accessibility-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* CTA Image */
+.about-page .about-cta-image {
+    overflow: hidden;
+}
+
+.about-page .about-cta-image img {
+    transition: transform .5s ease;
+}
+
+.about-page .about-cta-inner:hover .about-cta-image img {
+    transform: scale(1.04);
+}
+
+
+/* RTL Hover Direction */
+html[dir="rtl"] .about-page .timeline-item:hover .timeline-content {
+    transform: translateX(-5px);
+}
+
+html[dir="rtl"] .about-page .approach-card::before,
+html[dir="rtl"] .about-page .value-card::before {
+    transform-origin: right;
+}
+
+
+/* Light Mode */
+body.light .about-page .approach-card:hover,
+body.light .about-page .value-card:hover,
+body.light .about-page .story-highlight:hover {
+    background: var(--surface);
+    box-shadow:
+        0 16px 40px rgba(20, 20, 26, .10),
+        0 8px 25px rgba(255, 122, 41, .12);
+}
+
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .about-page .approach-card,
+    .about-page .value-card,
+    .about-page .team-card,
+    .about-page .team-image img,
+    .about-page .story-highlight,
+    .about-page .highlight-icon,
+    .about-page .approach-icon,
+    .about-page .value-card > i,
+    .about-page .timeline-content,
+    .about-page .timeline-marker,
+    .about-page .accessibility-image,
+    .about-page .accessibility-image img,
+    .about-page .about-cta-image img {
+        transition: none;
+        transform: none;
+    }
+
+    .about-page .approach-card::before,
+    .about-page .value-card::before {
+        transition: none;
+    }
+}/* =========================================================
+   ABOUT PAGE — 360PX VALUE CARDS
+========================================================= */
+
+@media screen and (min-width: 350px) and (max-width: 639px) {
+
+    .about-page .values-layout {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .about-page .values-intro {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-page .values-intro .section-eyebrow {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .about-page .values-intro h2 {
+        text-align: center;
+    }
+
+    .about-page .values-intro p {
+        text-align: center;
+    }
+
+    /* TWO VALUE CARDS PER ROW */
+    .about-page .values-grid {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    .about-page .value-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 190px;
+        padding: 18px 10px !important;
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .about-page .value-card > i {
+        width: 42px;
+        height: 42px;
+
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto !important;
+        flex-shrink: 0;
+
+        font-size: 0.9rem;
+    }
+
+    .about-page .value-card h3 {
+        width: 100%;
+        margin: 12px 0 0 !important;
+
+        font-size: 0.82rem !important;
+        line-height: 1.3;
+
+        text-align: center;
+    }
+
+    .about-page .value-card p {
+        width: 100%;
+        max-width: 135px;
+
+        margin: 7px auto 0 !important;
+
+        font-size: 0.64rem !important;
+        line-height: 1.5;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   360PX AND BELOW
+========================================================= */
+
+@media screen and (max-width: 380px) {
+
+    .about-page .values-layout {
+        gap: 25px;
+    }
+
+    .about-page .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 9px !important;
+    }
+
+    .about-page .value-card {
+        min-height: 180px;
+        padding: 16px 8px !important;
+        border-radius: 14px;
+    }
+
+    .about-page .value-card > i {
+        width: 38px;
+        height: 38px;
+        font-size: 0.82rem;
+    }
+
+    .about-page .value-card h3 {
+        margin-top: 10px !important;
+        font-size: 0.78rem !important;
+    }
+
+    .about-page .value-card p {
+        max-width: 125px;
+        margin-top: 5px !important;
+        font-size: 0.6rem !important;
+        line-height: 1.45;
+    }
 }

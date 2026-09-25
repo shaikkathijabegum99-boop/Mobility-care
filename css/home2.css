@@ -864,7 +864,7 @@
 
 .home2-page .btn-outline {
     border: 1px solid var(--secondary);
-   
+   color:white;
     background: transparent;
 }
 
@@ -875,18 +875,22 @@
 }
 
 
+/* =========================================================
+   HOME 2 — LIGHT MODE MEDIUM DARK OVERLAY
+========================================================= */
+
 body.light .home2-hero-overlay {
     background: linear-gradient(
         90deg,
-        rgba(199, 198, 195, 0.97) 0%,
-        rgba(243, 241, 236, .82) 38%,
-        rgba(243, 241, 236, .42) 70%,
-        rgba(243, 241, 236, .10) 100%
+        rgba(14, 14, 17, 0.72) 0%,
+        rgba(14, 14, 17, 0.58) 38%,
+        rgba(14, 14, 17, 0.38) 70%,
+        rgba(14, 14, 17, 0.12) 100%
     );
 }
 body.light .home2-hero-content h1,
 body.light .home2-hero-content > p:not(.section-eyebrow) {
-    color: var(--text);
+    color:white;
 }
 
 body.light .home2-final-cta {
@@ -2186,4 +2190,221 @@ html[dir="rtl"] .product-tag {
     z-index: 2;
 }.final-cta-actions .btn-outline{
     color:white;
+}
+
+/* Solution Cards */
+.solution-feature-card {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.solution-feature-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, 0.45);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.16),
+        0 0 0 1px rgba(255, 122, 41, 0.08);
+}
+
+
+/* Premium Product Cards */
+.premium-product-card {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.premium-product-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 122, 41, 0.45);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.16),
+        0 0 0 1px rgba(255, 122, 41, 0.08);
+}
+
+
+/* Image Zoom */
+.solution-feature-card .solution-image img,
+.premium-product-card .product-image img {
+    transition: transform 0.5s ease;
+}
+
+.solution-feature-card:hover .solution-image img,
+.premium-product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+
+/* Solution Link Arrow */
+.solution-link {
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+.solution-link i {
+    transition: transform 0.25s ease;
+}
+
+.solution-link:hover {
+    gap: 13px;
+}
+
+.solution-link:hover i {
+    transform: translateX(4px);
+}
+
+
+/* How It Works Cards */
+.how-it-works-step {
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.how-it-works-step:hover {
+    background: rgba(255, 122, 41, 0.045);
+}
+
+.how-it-works-step:hover .how-step-icon {
+    border-color: var(--secondary);
+    background: rgba(255, 122, 41, 0.08);
+    transform: translateY(-3px);
+}
+
+.how-step-icon {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* Experience Points */
+.experience-point {
+    transition:
+        background 0.3s ease,
+        padding-left 0.3s ease,
+        padding-right 0.3s ease;
+}
+
+.experience-point:hover {
+    background: rgba(255, 122, 41, 0.035);
+}
+
+.experience-point:hover .point-icon {
+    border-color: var(--secondary);
+    background: rgba(255, 122, 41, 0.08);
+}
+
+.point-icon {
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.experience-point:hover .point-icon {
+    transform: translateY(-3px);
+}
+
+
+/* Financing Items */
+.financing-stat {
+    transition:
+        background 0.3s ease,
+        padding-left 0.3s ease,
+        padding-right 0.3s ease;
+}
+
+.financing-stat:hover {
+    background: rgba(255, 122, 41, 0.035);
+}
+
+.financing-stat:hover > strong {
+    color: var(--secondary-deep);
+}
+
+
+/* Testimonial Mini Cards */
+.mini-testimonial {
+    transition:
+        background 0.3s ease,
+        padding-left 0.3s ease,
+        padding-right 0.3s ease;
+}
+
+.mini-testimonial:hover {
+    background: rgba(255, 122, 41, 0.035);
+}
+
+
+/* Avatar Hover */
+.person-avatar {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.testimonial-person:hover .person-avatar {
+    transform: translateY(-3px);
+    border-color: var(--secondary);
+    background: rgba(255, 122, 41, 0.08);
+}
+
+
+
+body.light .solution-feature-card:hover,
+body.light .premium-product-card:hover {
+    box-shadow:
+        0 18px 40px rgba(20, 20, 26, 0.12),
+        0 0 0 1px rgba(255, 122, 41, 0.08);
+}
+
+body.light .how-it-works-step:hover,
+body.light .experience-point:hover,
+body.light .financing-stat:hover,
+body.light .mini-testimonial:hover {
+    background: rgba(255, 122, 41, 0.06);
+}
+
+
+
+html[dir="rtl"] .solution-link:hover i {
+    transform: translateX(-4px);
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .solution-feature-card,
+    .premium-product-card,
+    .solution-feature-card .solution-image img,
+    .premium-product-card .product-image img,
+    .how-it-works-step,
+    .how-step-icon,
+    .experience-point,
+    .point-icon,
+    .financing-stat,
+    .mini-testimonial,
+    .person-avatar,
+    .solution-link,
+    .solution-link i {
+        transition: none;
+    }
+
+    .solution-feature-card:hover,
+    .premium-product-card:hover {
+        transform: none;
+    }
+
+    .solution-feature-card:hover .solution-image img,
+    .premium-product-card:hover .product-image img {
+        transform: none;
+    }
 }
