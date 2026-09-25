@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MobilityCare | Product Details</title>
+
+    <meta name="description"
+        content="Explore MobilityCare mobility and accessibility products designed for comfort, safety, confidence, and everyday independence.">
+
+    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/index.css">
+
+    
+    <link rel="stylesheet" href="css/product-details.css">
+</head>
+
+<body class="dark product-details-page">
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+
+<body class="dark">
+
+<header class="navbar-header">
+    <div class="navbar-container">
+
+        <a href="index.html" class="navbar-logo">
+            <span class="logo-emoji">
+                <i class="fa-solid fa-wheelchair"></i>
+            </span>
+
+            <div class="logo-text-group">
+                <span class="logo-name">MobilityCare</span>
+                <span class="logo-subtitle">Mobility & Accessibility Store</span>
+            </div>
+        </a>
+
+        <nav class="navbar-menu">
+            <ul class="menu-list">
+
+                <li class="menu-item dropdown">
+                    <a href="index.html"
+                       class="menu-link dropdown-toggle"
+                       id="home-menu-link">
+                        Home <span class="dropdown-caret">▾</span>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-label="Home Submenu">
+                        <li>
+                            <a href="index.html" class="dropdown-link">
+                                Home 1 — Classic
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home2.html" class="dropdown-link">
+                                Home 2 — Premium
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="about.html" class="menu-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="products.html" class="menu-link">
+                        Products
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="insurance.html" class="menu-link">
+                        Insurance & Financing
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="fitting.html" class="menu-link">
+                        Fitting Consultation
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="contact.html" class="menu-link">
+                        Contact
+                    </a>
+                </li>
+  <div class="mobile-assistance">
+        <a href="contact.html" class="btn-nav-login">
+            Get Assistance
+        </a>
+    </div>
+            </ul>
+        </nav>
+
+        <div class="navbar-actions">
+
+            <button
+                id="theme-toggle"
+                class="nav-icon-btn"
+                aria-label="Toggle dark/light theme"
+                title="Toggle Theme">
+
+                <svg class="sun-icon"
+                     viewBox="0 0 24 24"
+                     width="20"
+                     height="20"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+
+                <svg class="moon-icon"
+                     viewBox="0 0 24 24"
+                     width="20"
+                     height="20"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3
+                             7 7 0 0 0 21 12.79z">
+                    </path>
+                </svg>
+
+            </button>
+
+            <button
+                id="rtl-toggle"
+                class="nav-icon-btn text-btn"
+                aria-label="Toggle RTL layout"
+                title="Toggle RTL">
+
+                <span>RTL</span>
+            </button>
+
+            <a href="contact.html"
+               class="btn-nav-login"
+               id="contact-btn">
+                Get Assistance
+            </a>
+
+              <button
+                id="mobile-menu-btn"
+                class="mobile-menu-hamburger"
+                aria-label="Toggle Menu">
+
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="product-detail-hero">
+
+    <div class="product-detail-hero-bg">
+        <img
+            id="productHeroImage"
+            src="Images/manual-wheelchair.jpg"
+            alt="Mobility product">
+    </div>
+
+    <div class="product-detail-hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="product-detail-hero-content">
+
+            <span class="section-eyebrow" id="productCategory">
+                MOBILITYCARE PRODUCTS
+            </span>
+
+            <h1 id="productHeroTitle">
+                Manual <span>Wheelchairs</span>
+            </h1>
+
+            <p id="productHeroText">
+                Comfortable and practical mobility solutions designed
+                to support everyday movement and independence.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="product-overview-section">
+
+    <div class="container">
+
+        <div class="product-overview-grid">
+
+            
+            <div class="product-main-image">
+
+                <div class="product-image-frame">
+
+                    <img
+                        id="productMainImage"
+                        src="Images/manual-wheelchair.jpg"
+                        alt="Manual wheelchair">
+
+                </div>
+
+            </div>
+
+
+            
+            <div class="product-overview-content">
+
+                <span class="section-eyebrow" id="productEyebrow">
+                    FEATURED MOBILITY SOLUTION
+                </span>
+
+                <h2 id="productTitle">
+                    Manual Wheelchairs
+                </h2>
+
+                <p class="product-intro" id="productIntro">
+                    Designed for people who need dependable everyday
+                    mobility support without compromising comfort,
+                    safety, or ease of use.
+                </p>
+
+
+                <div class="product-price-box">
+
+                    <span class="price-label">
+                        Starting From
+                    </span>
+
+                    <strong id="productPrice">
+                        ₹8,500
+                    </strong>
+
+                </div>
+
+
+                <div class="product-actions">
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="fitting.html" class="btn btn-outline">
+                        Book Fitting
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="product-features-section">
+
+    <div class="container">
+
+        <div class="section-header center">
+
+            <span class="section-eyebrow">
+                PRODUCT FEATURES
+            </span>
+
+            <h2>
+                Designed Around
+                <span>Everyday Comfort</span>
+            </h2>
+
+            <p>
+                Practical features selected to make everyday mobility
+                easier, safer, and more comfortable.
+            </p>
+
+        </div>
+
+
+        <div class="product-features-grid" id="productFeatures">
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="product-specifications-section">
+
+    <div class="container">
+
+        <div class="product-specifications-grid">
+
+            
+            <div class="product-specifications-content">
+
+                <span class="section-eyebrow">
+                    PRODUCT DETAILS
+                </span>
+
+                <h2>
+                    What You
+                    <span>Should Know</span>
+                </h2>
+
+                <p id="productDescription">
+                    This mobility solution is designed with everyday
+                    usability and practical support in mind.
+                </p>
+
+                <ul class="product-details-list" id="productDetailsList">
+
+                    
+
+                </ul>
+
+            </div>
+
+
+            
+            <div class="product-specifications-card">
+
+                <div class="specification-card-header">
+
+                    <span>
+                        SPECIFICATIONS
+                    </span>
+
+                    <i class="fa-solid fa-sliders"></i>
+
+                </div>
+
+
+                <div class="specification-list" id="productSpecifications">
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="product-suitable-section">
+
+    <div class="container">
+
+        <div class="product-suitable-grid">
+
+            <div class="product-suitable-image">
+
+                <img
+                    id="productSuitableImage"
+                    src="Images/product-guidance.jpg"
+                    alt="Mobility product guidance">
+
+            </div>
+
+
+            <div class="product-suitable-content">
+
+                <span class="section-eyebrow">
+                    IS THIS RIGHT FOR YOU?
+                </span>
+
+                <h2 id="suitableTitle">
+                    A Practical Choice for
+                    <span>Everyday Mobility</span>
+                </h2>
+
+                <p id="suitableText">
+                    The right mobility product depends on your comfort,
+                    movement, environment, and daily routine.
+                </p>
+
+
+                <ul class="suitable-list" id="suitableList">
+
+                    
+
+                </ul>
+
+
+                <a href="fitting.html" class="btn btn-outline">
+                    Get Fitting Guidance
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="product-care-section">
+
+    <div class="container">
+
+        <div class="section-header center">
+
+            <span class="section-eyebrow">
+                CARE & MAINTENANCE
+            </span>
+
+            <h2>
+                Keep Your
+                <span>Product Ready</span>
+            </h2>
+
+            <p>
+                Simple care and regular checks can help keep your
+                mobility equipment comfortable and dependable.
+            </p>
+
+        </div>
+
+
+        <div class="care-grid">
+
+            <article class="care-card">
+
+                <div class="care-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>
+                    Check Regularly
+                </h3>
+
+                <p>
+                    Inspect wheels, brakes, frames, supports,
+                    and moving parts regularly.
+                </p>
+
+            </article>
+
+
+            <article class="care-card">
+
+                <div class="care-icon">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+
+                <h3>
+                    Keep It Clean
+                </h3>
+
+                <p>
+                    Clean the equipment according to the
+                    manufacturer's care instructions.
+                </p>
+
+            </article>
+
+
+            <article class="care-card">
+
+                <div class="care-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3>
+                    Arrange Service
+                </h3>
+
+                <p>
+                    Contact a qualified technician when adjustments
+                    or repairs are needed.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="product-detail-cta">
+
+    <div class="container">
+
+        <div class="product-detail-cta-inner">
+
+            <div class="product-detail-cta-content">
+
+                <span class="section-eyebrow">
+                    NEED HELP CHOOSING?
+                </span>
+
+                <h2>
+                    Find the Right
+                    <span>Mobility Solution</span>
+                </h2>
+
+                <p>
+                    Not sure which product is suitable for your
+                    needs? Our team can help you understand your
+                    options and arrange a fitting consultation.
+                </p>
+
+            </div>
+
+
+            <div class="product-detail-cta-actions">
+
+                <a href="fitting.html" class="btn btn-primary">
+                    Book a Consultation
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="contact.html" class="btn btn-outline">
+                    Contact Us
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <div class="footer-col brand-col">
+
+            <a href="index.html" class="footer-logo">
+
+                <span class="logo-emoji">
+                    <i class="fa-solid fa-wheelchair"></i>
+                </span>
+
+                <div class="logo-text-group">
+
+                    <span class="logo-name">
+                        MobilityCare
+                    </span>
+
+                    <span class="logo-subtitle">
+                        Mobility & Accessibility Store
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <p class="brand-desc">
+                Dependable mobility equipment and accessibility
+                solutions designed to support safer movement,
+                comfort, and everyday independence.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3 class="footer-title">
+                Explore
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home 1
+                    </a>
+                </li>
+
+                <li>
+                    <a href="home1.html">
+                        Home 2
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3 class="footer-title">
+                Mobility Solutions
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="products.html">
+                        Wheelchairs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Walkers
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Mobility Scooters
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Ramps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Accessibility Accessories
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col contact-col">
+
+            <h3 class="footer-title">
+                Contact Us
+            </h3>
+
+            <div class="footer-contact-list">
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-location-dot footer-contact-icon"></i>
+
+                    <span class="contact-info-text">
+                        Your MobilityCare Store<br>
+                        Your City, India
+                    </span>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-envelope footer-contact-icon"></i>
+
+                    <a
+                        href="mailto:info@mobilitycare.com"
+                        class="footer-contact-link">
+
+                        info@mobilitycare.com
+
+                    </a>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-phone footer-contact-icon"></i>
+
+                    <a
+                        href="tel:+18005558349"
+                        class="footer-contact-link">
+
+                        +1 (800) 555-8349
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p class="copyright">
+            &copy; 2026 MobilityCare.
+            All rights reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+<script src="js/product-detail.js"></script>
+
+</body>
+</html>

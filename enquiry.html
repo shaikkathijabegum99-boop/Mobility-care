@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MobilityCare | Send an Enquiry</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+
+        :root {
+            --primary: #F5F3EF;
+            --primary-deep: #FFFFFF;
+
+            --secondary: #FF7A29;
+            --secondary-deep: #FF9752;
+            --secondary-text: #1A1006;
+
+            --bg: #0E0E11;
+            --surface: #18181C;
+            --surface-alt: #212126;
+
+            --text: #F5F3EF;
+            --text-muted: #A9A7A6;
+            --text-faint: #78767A;
+
+            --border: rgba(245, 243, 239, 0.50);
+            --footer-tint: rgba(255, 122, 41, 0.07);
+            --tint: rgba(255, 122, 41, 0.06);
+
+            --display: 'Space Grotesk', sans-serif;
+            --body-font: 'Inter', sans-serif;
+            --mono: 'Space Mono', monospace;
+
+            --side-pad: 6vw;
+
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 32px;
+
+            --section-bg: #000000;
+            --section-alt-bg: rgba(255, 122, 41, 0.08);
+
+            --shadow-card:
+                0 10px 30px rgba(255, 122, 41, 0.18);
+        }
+
+
+
+        body.light {
+            --primary: #14141A;
+            --primary-deep: #000000;
+
+            --secondary: #FF7A29;
+            --secondary-deep: #E8600D;
+            --secondary-text: #FFFFFF;
+
+            --bg: #F3F1EC;
+            --surface: #FFFFFF;
+            --surface-alt: #EAE6DC;
+
+            --text: #14141A;
+            --text-muted: #6B6863;
+            --text-faint: #948F87;
+
+            --border: rgba(20, 20, 26, 0.10);
+            --footer-tint: rgba(255, 122, 41, 0.10);
+            --tint: rgba(255, 122, 41, 0.09);
+
+            --section-bg: #FFFFFF;
+            --section-alt-bg: #FFF2E6;
+
+            --shadow-card:
+                0 8px 24px rgba(255, 122, 41, 0.15);
+        }
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: var(--body-font);
+            background: var(--bg);
+            color: var(--text);
+            transition:
+                background 0.3s ease,
+                color 0.3s ease;
+
+            overflow-x: hidden;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        button {
+            border: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+
+        .enquiry-page {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 50px 20px;
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(255, 122, 41, 0.13),
+                    transparent 32%
+                ),
+                radial-gradient(
+                    circle at bottom left,
+                    rgba(255, 122, 41, 0.08),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            transition: background 0.3s ease;
+        }
+
+
+
+        .enquiry-wrapper {
+            width: 100%;
+            max-width: 650px;
+        }
+
+
+
+        .enquiry-card {
+            width: 100%;
+
+            padding: 34px;
+
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-card);
+
+            transition:
+                background 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+
+        .enquiry-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 12px;
+
+            width: fit-content;
+            margin: 0 auto 24px;
+
+            text-align: left;
+        }
+
+        .enquiry-brand-icon {
+            width: 48px;
+            height: 48px;
+
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--secondary);
+            color: var(--secondary-text);
+
+            border-radius: 14px;
+
+            font-size: 1.25rem;
+
+            transition: 0.25s ease;
+        }
+
+        .enquiry-brand:hover .enquiry-brand-icon {
+            transform: translateY(-2px);
+        }
+
+        .enquiry-brand-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .enquiry-brand-name {
+            font-family: var(--display);
+            font-size: 1.35rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--secondary);
+        }
+
+        .enquiry-brand-subtitle {
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+
+        .enquiry-controls {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            gap: 8px;
+
+         
+        }
+
+        .nav-icon-btn.text-btn,
+        .control-btn {
+            width: 42px;
+            height: 42px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid var(--border);
+            border-radius: 50%;
+
+            background: var(--bg);
+            color: var(--text);
+
+            cursor: pointer;
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .nav-icon-btn.text-btn {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            font-weight: 700;
+        }
+
+        .nav-icon-btn.text-btn:hover,
+        .control-btn:hover {
+            background: var(--secondary);
+            color: var(--secondary-text);
+            border-color: var(--secondary);
+
+            transform: translateY(-2px);
+        }
+
+        .nav-icon-btn.text-btn span {
+            line-height: 1;
+        }
+
+        .control-btn i {
+            font-size: 0.9rem;
+        }
+
+
+
+        .enquiry-header {
+            text-align: center;
+
+            max-width: 520px;
+            margin: 0 auto 28px;
+        }
+
+        .enquiry-eyebrow {
+            margin-bottom: 8px;
+
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            font-weight: 700;
+
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+
+            color: var(--secondary);
+        }
+
+        .enquiry-header h1 {
+            margin-bottom: 10px;
+
+            font-family: var(--display);
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 700;
+
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+
+            color: var(--text);
+        }
+
+        .enquiry-header h1 span {
+            color: var(--secondary);
+        }
+
+        .enquiry-header p:last-child {
+            max-width: 480px;
+            margin: 0 auto;
+
+            color: var(--text-muted);
+
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+
+
+        .enquiry-form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group label {
+            font-size: 0.78rem;
+            font-weight: 600;
+
+            color: var(--text);
+        }
+
+        .form-group label span {
+            color: var(--secondary);
+        }
+
+
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+
+            background: var(--bg);
+            color: var(--text);
+
+            padding: 12px 14px;
+
+            outline: none;
+
+            font-size: 0.84rem;
+
+            transition:
+                border-color 0.25s ease,
+                box-shadow 0.25s ease,
+                background 0.25s ease;
+        }
+
+        .form-group input,
+        .form-group select {
+            height: 46px;
+        }
+
+        .form-group textarea {
+            min-height: 125px;
+            resize: vertical;
+            line-height: 1.6;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-faint);
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-group select option {
+            background: var(--surface);
+            color: var(--text);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--secondary);
+
+            box-shadow:
+                0 0 0 3px rgba(255, 122, 41, 0.10);
+        }
+
+
+        .enquiry-submit {
+            width: 100%;
+
+            min-height: 50px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+
+            margin-top: 2px;
+
+            padding: 12px 20px;
+
+            border-radius: 999px;
+
+            background: var(--secondary);
+            color: var(--secondary-text);
+
+            font-family: var(--display);
+            font-size: 0.9rem;
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                background 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .enquiry-submit:hover {
+            background: var(--secondary-deep);
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 10px 24px rgba(255, 122, 41, 0.20);
+        }
+
+        .enquiry-submit:active {
+            transform: translateY(0);
+        }
+
+        .enquiry-submit i {
+            font-size: 0.8rem;
+        }
+
+
+
+        .privacy-note {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+
+            margin-top: 2px;
+
+            color: var(--text-faint);
+
+            font-size: 0.68rem;
+            line-height: 1.5;
+
+            text-align: center;
+        }
+
+        .privacy-note i {
+            color: var(--secondary);
+            font-size: 0.7rem;
+        }
+
+
+
+        html[dir="rtl"] .enquiry-brand {
+            text-align: right;
+        }
+
+        html[dir="rtl"] .form-group {
+            text-align: right;
+        }
+
+        html[dir="rtl"] .enquiry-header {
+            direction: rtl;
+        }
+
+        html[dir="rtl"] .enquiry-submit i {
+            transform: rotate(180deg);
+        }
+
+
+
+        @media (max-width: 700px) {
+
+            .enquiry-page {
+                padding: 25px 14px;
+                align-items: flex-start;
+            }
+
+            .enquiry-wrapper {
+                margin-top: 10px;
+            }
+
+            .enquiry-card {
+                padding: 26px 20px;
+                border-radius: 24px;
+            }
+
+            .enquiry-brand {
+                margin-bottom: 20px;
+            }
+
+            .enquiry-controls {
+                margin-bottom: 20px;
+            }
+
+            .enquiry-header {
+                margin-bottom: 24px;
+            }
+
+            .enquiry-header h1 {
+                font-size: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+        }
+
+
+
+        @media (max-width: 420px) {
+
+            .enquiry-page {
+                padding: 15px 10px;
+            }
+
+            .enquiry-card {
+                padding: 22px 16px;
+                border-radius: 20px;
+            }
+
+            .enquiry-brand-icon {
+                width: 44px;
+                height: 44px;
+            }
+
+            .enquiry-brand-name {
+                font-size: 1.2rem;
+            }
+
+            .enquiry-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .enquiry-header p:last-child {
+                font-size: 0.82rem;
+            }
+
+            .nav-icon-btn.text-btn,
+            .control-btn {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <main class="enquiry-page">
+
+        <div class="enquiry-wrapper">
+
+            <div class="enquiry-card">
+
+
+
+                <div class="enquiry-controls">
+
+                    
+
+                    <button
+                        id="rtl-toggle"
+                        class="nav-icon-btn text-btn"
+                        aria-label="Toggle RTL layout"
+                        title="Toggle RTL">
+
+                        <span>RTL</span>
+
+                    </button>
+
+
+                    
+
+                    <button
+                        type="button"
+                        class="control-btn"
+                        id="themeToggle"
+                        aria-label="Toggle dark and light mode"
+                        title="Toggle theme">
+
+                        <i class="fa-solid fa-sun"></i>
+
+                    </button>
+
+                </div>
+
+                <a href="index.html" class="enquiry-brand">
+
+                    <span class="enquiry-brand-icon">
+                        <i class="fa-solid fa-wheelchair"></i>
+                    </span>
+
+                    <span class="enquiry-brand-text">
+
+                        <span class="enquiry-brand-name">
+                            MobilityCare
+                        </span>
+
+                        <span class="enquiry-brand-subtitle">
+                            Mobility & Accessibility
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+
+
+                <div class="enquiry-header">
+
+                    <p class="enquiry-eyebrow">
+                        GET IN TOUCH
+                    </p>
+
+                    <h1>
+                        Send Us an <span>Enquiry</span>
+                    </h1>
+
+                    <p>
+                        Tell us what you need help with and our
+                        MobilityCare team will get back to you.
+                    </p>
+
+                </div>
+
+
+
+                <form id="enquiryForm" class="enquiry-form">
+
+
+                    
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="help">
+                                What do you need help with? <span>*</span>
+                            </label>
+
+                            <select
+                                id="help"
+                                name="help"
+                                required>
+
+                                <option value="" selected disabled>
+                                    Select an option
+                                </option>
+
+                                <option value="wheelchair">
+                                    Wheelchair
+                                </option>
+
+                                <option value="walker">
+                                    Walker / Mobility Aid
+                                </option>
+
+                                <option value="scooter">
+                                    Mobility Scooter
+                                </option>
+
+                                <option value="ramp">
+                                    Ramp / Accessibility
+                                </option>
+
+                                <option value="fitting">
+                                    Fitting Consultation
+                                </option>
+
+                                <option value="insurance">
+                                    Insurance / Financing
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us how we can help you..."
+                            required></textarea>
+
+                    </div>
+
+
+                    
+
+                    <button
+                        type="submit"
+                        class="enquiry-submit">
+
+                        Send Enquiry
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    
+
+                    <p class="privacy-note">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        Your information is used only to respond
+                        to your enquiry.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <script>
+
+
+        const themeToggle =
+            document.getElementById("themeToggle");
+
+        const savedTheme =
+            localStorage.getItem("mobilityTheme");
+
+        if (savedTheme === "light") {
+            document.body.classList.add("light");
+        }
+
+
+        function updateThemeIcon() {
+
+            if (!themeToggle) return;
+
+            const icon =
+                themeToggle.querySelector("i");
+
+            if (!icon) return;
+
+            if (document.body.classList.contains("light")) {
+
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+
+            } else {
+
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+
+            }
+
+        }
+
+
+        updateThemeIcon();
+
+
+        if (themeToggle) {
+
+            themeToggle.addEventListener("click", function () {
+
+                document.body.classList.toggle("light");
+
+                const currentTheme =
+                    document.body.classList.contains("light")
+                        ? "light"
+                        : "dark";
+
+                localStorage.setItem(
+                    "mobilityTheme",
+                    currentTheme
+                );
+
+                updateThemeIcon();
+
+            });
+
+        }
+
+
+
+        const rtlToggle =
+            document.getElementById("rtl-toggle");
+
+        const savedDirection =
+            localStorage.getItem("mobilityDirection") || "ltr";
+
+        document.documentElement.setAttribute(
+            "dir",
+            savedDirection
+        );
+
+
+        if (rtlToggle) {
+
+            rtlToggle.addEventListener("click", function () {
+
+                const currentDirection =
+                    document.documentElement.getAttribute("dir") || "ltr";
+
+                const newDirection =
+                    currentDirection === "rtl"
+                        ? "ltr"
+                        : "rtl";
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    newDirection
+                );
+
+                localStorage.setItem(
+                    "mobilityDirection",
+                    newDirection
+                );
+
+            });
+
+        }
+
+
+
+        const enquiryForm =
+            document.getElementById("enquiryForm");
+
+
+        if (enquiryForm) {
+
+            enquiryForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    event.preventDefault();
+
+
+                    if (!enquiryForm.checkValidity()) {
+
+                        enquiryForm.reportValidity();
+
+                        return;
+
+                    }
+
+
+                    alert(
+                        "Thank you! Your enquiry has been received. " +
+                        "Our MobilityCare team will contact you soon."
+                    );
+
+
+                    enquiryForm.reset();
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

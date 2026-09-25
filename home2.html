@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MobilityCare | Premium Mobility Equipment & Wheelchair Accessibility Store</title>
+
+    <meta name="description"
+        content="MobilityCare provides premium mobility equipment, wheelchair accessibility products, fitting consultation, and practical mobility support.">
+
+    <link rel="icon"
+        href="Images/favicon-32x32.png"
+        type="image/png"
+        sizes="32x32">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home2.css">
+</head>
+
+<body class="dark">
+
+
+
+<header class="navbar-header">
+
+    <div class="navbar-container">
+
+        <a href="index.html" class="navbar-logo">
+
+            <span class="logo-emoji">
+                <i class="fa-solid fa-wheelchair"></i>
+            </span>
+
+            <div class="logo-text-group">
+
+                <span class="logo-name">
+                    MobilityCare
+                </span>
+
+                <span class="logo-subtitle">
+                    Mobility & Accessibility Store
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="navbar-menu" aria-label="Main Navigation">
+
+            <ul class="menu-list">
+
+                <li class="menu-item dropdown">
+
+                    <a
+                        href="index.html"
+                        class="menu-link dropdown-toggle"
+                        id="home-menu-link"
+                        aria-haspopup="true">
+
+                        Home
+
+                        <span class="dropdown-caret">▾</span>
+
+                    </a>
+
+                    <ul
+                        class="dropdown-menu"
+                        aria-label="Home Submenu">
+
+                        <li>
+                            <a
+                                href="index.html"
+                                class="dropdown-link">
+
+                                Home 1 — Classic
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="home2.html"
+                                class="dropdown-link active">
+
+                                Home 2 — Premium
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="menu-item">
+                    <a href="about.html" class="menu-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="products.html" class="menu-link">
+                        Products
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="insurance.html" class="menu-link">
+                        Insurance & Financing
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="fitting.html" class="menu-link">
+                        Fitting Consultation
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="contact.html" class="menu-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="mobile-assistance">
+
+                <a
+                    href="contact.html"
+                    class="btn-nav-login">
+
+                    Get Assistance
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <div class="navbar-actions">
+
+            <button
+                id="theme-toggle"
+                class="nav-icon-btn"
+                type="button"
+                aria-label="Toggle dark/light theme"
+                title="Toggle Theme">
+
+                <svg
+                    class="sun-icon"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true">
+
+                    <circle cx="12" cy="12" r="5"></circle>
+
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+
+                </svg>
+
+
+                <svg
+                    class="moon-icon"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true">
+
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3
+                             7 7 0 0 0 21 12.79z">
+                    </path>
+
+                </svg>
+
+            </button>
+
+
+            <button
+                id="rtl-toggle"
+                class="nav-icon-btn text-btn"
+                type="button"
+                aria-label="Toggle RTL layout"
+                title="Toggle RTL">
+
+                <span>RTL</span>
+
+            </button>
+
+
+            <a
+                href="contact.html"
+                class="btn-nav-login"
+                id="contact-btn">
+
+                Get Assistance
+
+            </a>
+
+
+            <button
+                id="mobile-menu-btn"
+                class="mobile-menu-hamburger"
+                type="button"
+                aria-label="Toggle Menu"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main class="home2-page">
+
+
+
+<section class="home2-hero">
+
+    <div class="home2-hero-image">
+
+        <img
+            src="Images/mobility-premium-hero.jpg"
+            alt="Person using a modern mobility wheelchair">
+
+    </div>
+
+    <div class="home2-hero-overlay"></div>
+
+
+    <div class="container">
+
+        <div class="home2-hero-content">
+
+            <p class="section-eyebrow">
+                PREMIUM MOBILITY SOLUTIONS
+            </p>
+
+            <h1>
+                Move with
+                <span>confidence.</span>
+                Live with independence.
+            </h1>
+
+            <p>
+                Thoughtfully selected mobility equipment designed
+                around comfort, accessibility and everyday living.
+            </p>
+
+            <div class="home2-hero-actions">
+
+                <a
+                    href="products.html"
+                    class="btn btn-primary">
+
+                    Explore Products
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+                <a
+                    href="fitting.html"
+                    class="btn btn-outline">
+
+                    Book a Consultation
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="home2-how-it-works">
+
+    <div class="container">
+
+        <div class="home2-how-grid">
+
+            <div class="home2-how-content">
+
+                <p class="section-kicker">
+                    A DIFFERENT APPROACH
+                </p>
+
+                <h2>
+                    Mobility should feel
+                    <span>simple.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="home2-how-content">
+
+                <p>
+                    Finding the right mobility equipment does not
+                    have to feel complicated. MobilityCare brings
+                    products, practical guidance and fitting support
+                    together in one straightforward experience.
+                </p>
+
+                <a
+                    href="about.html"
+                    class="solution-link">
+
+                    Discover MobilityCare
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="how-it-works-steps">
+
+
+            <article class="how-it-works-step">
+
+                <div class="how-step-top">
+
+                    <span class="how-step-number">
+                        01
+                    </span>
+
+                    <div class="how-step-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+
+                </div>
+
+                <h3>
+                    Discover
+                </h3>
+
+                <p>
+                    Explore thoughtfully selected mobility and
+                    accessibility equipment.
+                </p>
+
+            </article>
+
+
+            <article class="how-it-works-step">
+
+                <div class="how-step-top">
+
+                    <span class="how-step-number">
+                        02
+                    </span>
+
+                    <div class="how-step-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                </div>
+
+                <h3>
+                    Understand
+                </h3>
+
+                <p>
+                    Compare features, dimensions and practical
+                    considerations with confidence.
+                </p>
+
+            </article>
+
+
+            <article class="how-it-works-step">
+
+                <div class="how-step-top">
+
+                    <span class="how-step-number">
+                        03
+                    </span>
+
+                    <div class="how-step-icon">
+                        <i class="fa-solid fa-person-circle-check"></i>
+                    </div>
+
+                </div>
+
+                <h3>
+                    Move Forward
+                </h3>
+
+                <p>
+                    Arrange fitting and choose equipment that works
+                    for your everyday routine.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="home2-solutions">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <p class="section-eyebrow">
+                MOBILITY COLLECTION
+            </p>
+
+            <h2>
+                Designed for the way
+                <span>you live.</span>
+            </h2>
+
+            <p>
+                Explore practical mobility solutions selected
+                around everyday comfort, movement and accessibility.
+            </p>
+
+        </div>
+
+
+        <div class="home2-solution-grid">
+
+
+            <article class="solution-feature-card">
+
+                <div class="solution-image">
+
+                    <img
+                        src="Images/Wheelchair.jpg"
+                        alt="Modern wheelchair"
+                        loading="lazy">
+
+                </div>
+
+                <div class="solution-content">
+
+                    <span class="solution-number">
+                        01 / MOBILITY
+                    </span>
+
+                    <h3>
+                        Wheelchairs
+                    </h3>
+
+                    <p>
+                        Supportive seating and practical mobility
+                        options for everyday movement.
+                    </p>
+
+                    <a
+                        href="products.html#wheelchairs"
+                        class="solution-link">
+
+                        Explore Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="solution-feature-card">
+
+                <div class="solution-image">
+
+                    <img
+                        src="Images/Walkers.jpg"
+                        alt="Mobility walker"
+                        loading="lazy">
+
+                </div>
+
+                <div class="solution-content">
+
+                    <span class="solution-number">
+                        02 / SUPPORT
+                    </span>
+
+                    <h3>
+                        Walkers
+                    </h3>
+
+                    <p>
+                        Stable walking aids created to support
+                        confident everyday movement.
+                    </p>
+
+                    <a
+                        href="products.html#walkers"
+                        class="solution-link">
+
+                        Explore Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="solution-feature-card">
+
+                <div class="solution-image">
+
+                    <img
+                        src="Images/Mobility scooters.jpg"
+                        alt="Mobility scooter"
+                        loading="lazy">
+
+                </div>
+
+                <div class="solution-content">
+
+                    <span class="solution-number">
+                        03 / FREEDOM
+                    </span>
+
+                    <h3>
+                        Mobility Scooters
+                    </h3>
+
+                    <p>
+                        Powered mobility solutions for greater
+                        freedom during everyday trips.
+                    </p>
+
+                    <a
+                        href="products.html#scooters"
+                        class="solution-link">
+
+                        Explore Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="solution-feature-card">
+
+                <div class="solution-image">
+
+                    <img
+                        src="Images/Accessibility ramps.jpg"
+                        alt="Wheelchair accessibility ramp"
+                        loading="lazy">
+
+                </div>
+
+                <div class="solution-content">
+
+                    <span class="solution-number">
+                        04 / ACCESS
+                    </span>
+
+                    <h3>
+                        Accessibility Ramps
+                    </h3>
+
+                    <p>
+                        Practical solutions that help make everyday
+                        spaces easier to access.
+                    </p>
+
+                    <a
+                        href="products.html#ramps"
+                        class="solution-link">
+
+                        Explore Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="home2-experience">
+
+    <div class="container">
+
+        <div class="home2-experience-grid">
+
+
+            <div class="home2-experience-image">
+
+                <img
+                    src="Images/Mobility equipment consultation.jpg"
+                    alt="Mobility equipment consultation"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="home2-experience-content">
+
+                <p class="section-kicker">
+                    FITTING CONSULTATION
+                </p>
+
+                <h2>
+                    The right product
+                    begins with the
+                    <span>right fit.</span>
+                </h2>
+
+                <p>
+                    Product dimensions, positioning, comfort and
+                    everyday use can all influence your experience.
+                    Our fitting consultation helps you understand
+                    these details before choosing your equipment.
+                </p>
+
+
+                <div class="experience-points">
+
+
+                    <div class="experience-point">
+
+                        <div class="point-icon">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Product Measurements
+                            </h3>
+
+                            <p>
+                                Review dimensions and key product
+                                specifications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-point">
+
+                        <div class="point-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Practical Guidance
+                            </h3>
+
+                            <p>
+                                Understand features based on
+                                everyday requirements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-point">
+
+                        <div class="point-icon">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Compare Options
+                            </h3>
+
+                            <p>
+                                Look at suitable alternatives before
+                                making your decision.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <a
+                    href="fitting.html"
+                    class="btn btn-primary">
+
+                    Book a Fitting Consultation
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="home2-featured">
+
+    <div class="container">
+
+        <div class="featured-top">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    CURATED SELECTION
+                </p>
+
+                <h2>
+                    Everyday essentials,
+                    <span>refined.</span>
+                </h2>
+
+                <p>
+                    A selection of mobility products chosen for
+                    comfort, practicality and everyday support.
+                </p>
+
+            </div>
+
+
+            <a
+                href="products.html"
+                class="solution-link">
+
+                View All Products
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="featured-grid">
+
+
+            <article class="premium-product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Premium wheelchair.webp"
+                        alt="Premium wheelchair"
+                        loading="lazy">
+
+                    <span class="product-tag">
+                        FEATURED
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>
+                        WHEELCHAIRS
+                    </p>
+
+                    <h3>
+                        Comfort Mobility Chair
+                    </h3>
+
+                    <span>
+                        Everyday support with a practical,
+                        comfortable design.
+                    </span>
+
+                    <a
+                        href="products.html#wheelchairs"
+                        class="solution-link">
+
+                        Explore Product
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="premium-product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Premium walking frame.webp"
+                        alt="Premium mobility walker"
+                        loading="lazy">
+
+                    <span class="product-tag">
+                        POPULAR
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>
+                        WALKERS
+                    </p>
+
+                    <h3>
+                        Everyday Support Walker
+                    </h3>
+
+                    <span>
+                        Lightweight everyday support designed for
+                        daily movement.
+                    </span>
+
+                    <a
+                        href="products.html#walkers"
+                        class="solution-link">
+
+                        Explore Product
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="premium-product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Premium mobility scooter.jpg"
+                        alt="Premium mobility scooter"
+                        loading="lazy">
+
+                    <span class="product-tag">
+                        NEW
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>
+                        SCOOTERS
+                    </p>
+
+                    <h3>
+                        Freedom Mobility Scooter
+                    </h3>
+
+                    <span>
+                        Convenient powered mobility for
+                        everyday journeys.
+                    </span>
+
+                    <a
+                        href="products.html#scooters"
+                        class="solution-link">
+
+                        Explore Product
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="home2-financing">
+
+    <div class="container">
+
+        <div class="home2-financing-grid">
+
+
+            <div class="home2-financing-content">
+
+                <p class="section-kicker">
+                    INSURANCE & FINANCING
+                </p>
+
+                <h2>
+                    Making mobility
+                    <span>more accessible.</span>
+                </h2>
+
+                <p>
+                    Mobility equipment can be an important investment.
+                    Explore insurance information, payment pathways
+                    and purchase guidance to better understand your
+                    available options.
+                </p>
+
+                <a
+                    href="insurance.html"
+                    class="btn btn-primary">
+
+                    Explore Payment Options
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="financing-side">
+
+
+                <div class="financing-stat">
+
+                    <strong>
+                        01
+                    </strong>
+
+                    <div>
+
+                        <h3>
+                            Insurance Information
+                        </h3>
+
+                        <p>
+                            Understand documentation and
+                            coverage information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="financing-stat">
+
+                    <strong>
+                        02
+                    </strong>
+
+                    <div>
+
+                        <h3>
+                            Flexible Payment Options
+                        </h3>
+
+                        <p>
+                            Explore available ways to manage
+                            equipment costs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="financing-stat">
+
+                    <strong>
+                        03
+                    </strong>
+
+                    <div>
+
+                        <h3>
+                            Purchase Guidance
+                        </h3>
+
+                        <p>
+                            Get practical support throughout
+                            the purchasing process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="home2-testimonials">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-kicker">
+                CUSTOMER EXPERIENCES
+            </p>
+
+            <h2>
+                A better experience
+                <span>from start to finish.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-feature">
+
+
+            <div class="testimonial-quote">
+
+                <span class="quote-mark">
+                    “
+                </span>
+
+                <blockquote>
+                    The team made the process much easier for us.
+                    We could compare options, understand the
+                    features and choose equipment that suited
+                    our everyday needs.
+                </blockquote>
+
+
+                <div class="testimonial-person">
+
+                    <div class="person-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Priya R.
+                        </strong>
+
+                        <span>
+                            MobilityCare Customer
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial-side">
+
+
+                <article class="mini-testimonial">
+
+                    <p>
+                        “Clear information and helpful product
+                        guidance from the beginning.”
+                    </p>
+
+                    <strong>
+                        — Arun K.
+                    </strong>
+
+                </article>
+
+
+                <article class="mini-testimonial">
+
+                    <p>
+                        “The fitting consultation helped us
+                        understand which features mattered.”
+                    </p>
+
+                    <strong>
+                        — Meera S.
+                    </strong>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="home2-final-cta">
+    <div class="final-cta-image">
+        <img src="images/mobility-cta.jpg" alt="MobilityCare support and mobility equipment">
+    </div>
+
+    <div class="final-cta-overlay"></div>
+
+    <div class="final-cta-content">
+        <span class="section-kicker">LET'S GET YOU MOVING</span>
+
+        <h2>Move With Confidence.<br><span>live With Freedom.</span></h2>
+
+        <p>
+            Find the right mobility equipment and support
+            for a more comfortable, independent life.
+        </p>
+
+        <div class="final-cta-actions">
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+            <a href="products.html" class="btn btn-outline">Explore Products</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+
+        <div class="footer-col brand-col">
+
+            <a
+                href="index.html"
+                class="footer-logo">
+
+                <span class="logo-emoji">
+                    <i class="fa-solid fa-wheelchair"></i>
+                </span>
+
+                <div class="logo-text-group">
+
+                    <span class="logo-name">
+                        MobilityCare
+                    </span>
+
+                    <span class="logo-subtitle">
+                        Mobility & Accessibility Store
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <p class="brand-desc">
+                Dependable mobility equipment and accessibility
+                solutions designed to support safer movement,
+                comfort, and everyday independence.
+            </p>
+
+
+            <div class="social-links">
+
+                <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                    aria-label="YouTube">
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                    aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3 class="footer-title">
+                Explore
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home 1
+                    </a>
+                </li>
+
+                <li>
+                    <a href="home2.html">
+                        Home 2
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3 class="footer-title">
+                Mobility Solutions
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="products.html#wheelchairs">
+                        Wheelchairs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html#walkers">
+                        Walkers
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html#scooters">
+                        Mobility Scooters
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html#ramps">
+                        Ramps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Accessibility Accessories
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col contact-col">
+
+            <h3 class="footer-title">
+                Contact Us
+            </h3>
+
+            <div class="footer-contact-list">
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-location-dot footer-contact-icon"></i>
+
+                    <span class="contact-info-text">
+                        Your MobilityCare Store<br>
+                        Your City, India
+                    </span>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-envelope footer-contact-icon"></i>
+
+                    <a
+                        href="mailto:info@mobilitycare.com"
+                        class="footer-contact-link">
+
+                        info@mobilitycare.com
+
+                    </a>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-phone footer-contact-icon"></i>
+
+                    <a
+                        href="tel:+18005558349"
+                        class="footer-contact-link">
+
+                        +1 (800) 555-8349
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p class="copyright">
+            &copy; 2026 MobilityCare.
+            All rights reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+<script src="js/home2.js"></script>
+
+</body>
+</html>
