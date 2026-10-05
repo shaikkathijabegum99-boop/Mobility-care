@@ -526,13 +526,13 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage === "home2.html" ||
         currentPage === "";
 
-    /* Make main Home menu active */
+    
     if (isHomePage && homeParent) {
         homeParent.classList.add("active");
         document.documentElement.classList.add("home-page");
     }
 
-    /* Make correct dropdown item active */
+    
     homeDropdownLinks.forEach(link => {
 
         const linkPage =

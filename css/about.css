@@ -1458,7 +1458,7 @@ html[dir="rtl"] .about-page .btn:hover i {
    ABOUT PAGE — CARD HOVER EFFECTS
 ========================================================= */
 
-/* Approach Cards */
+
 .about-page .approach-card {
     position: relative;
     overflow: hidden;
@@ -1508,7 +1508,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* Values Cards */
+
 .about-page .value-card {
     position: relative;
     overflow: hidden;
@@ -1556,7 +1556,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* Team Cards */
+
 .about-page .team-card {
     position: relative;
     overflow: hidden;
@@ -1586,7 +1586,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* Story Highlight */
+
 .about-page .story-highlight {
     transition:
         transform .3s ease,
@@ -1617,7 +1617,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* Timeline Cards / Content */
+
 .about-page .timeline-content {
     transition:
         transform .3s ease,
@@ -1639,7 +1639,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* Accessibility Image */
+
 .about-page .accessibility-image {
     transition:
         transform .35s ease,
@@ -1663,7 +1663,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* CTA Image */
+
 .about-page .about-cta-image {
     overflow: hidden;
 }
@@ -1677,7 +1677,7 @@ html[dir="rtl"] .about-page .btn:hover i {
 }
 
 
-/* RTL Hover Direction */
+
 html[dir="rtl"] .about-page .timeline-item:hover .timeline-content {
     transform: translateX(-5px);
 }
@@ -1688,7 +1688,7 @@ html[dir="rtl"] .about-page .value-card::before {
 }
 
 
-/* Light Mode */
+
 body.light .about-page .approach-card:hover,
 body.light .about-page .value-card:hover,
 body.light .about-page .story-highlight:hover {
@@ -1699,7 +1699,7 @@ body.light .about-page .story-highlight:hover {
 }
 
 
-/* Reduced Motion */
+
 @media (prefers-reduced-motion: reduce) {
 
     .about-page .approach-card,
@@ -1754,7 +1754,7 @@ body.light .about-page .story-highlight:hover {
         text-align: center;
     }
 
-    /* TWO VALUE CARDS PER ROW */
+    
     .about-page .values-grid {
         width: 100%;
         display: grid !important;

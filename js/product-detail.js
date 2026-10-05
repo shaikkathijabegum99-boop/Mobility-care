@@ -270,6 +270,284 @@ document.addEventListener("DOMContentLoaded", () => {
                 "People who can safely operate scooter controls.",
                 "Users who benefit from a professional suitability assessment."
             ]
+        },
+              
+        ramp: {
+            category: "ACCESSIBILITY",
+            title: "Portable Accessibility Ramp",
+            heroText:
+                "A practical access solution designed to help improve movement between different levels and entrances.",
+
+            image: "Images/Accessibility Ramps.jpg",
+            price: "₹12,500",
+
+            intro:
+                "Portable accessibility ramps provide a practical way to improve access across suitable steps, thresholds, entrances, and small changes in level.",
+
+            description:
+                "Accessibility ramps are available in different lengths, widths, and designs. The appropriate ramp should be selected according to the height of the level change, available space, surface conditions, and required weight capacity.",
+
+            features: [
+                {
+                    icon: "fa-solid fa-road",
+                    title: "Improved Access",
+                    text: "Helps create a smoother route across suitable changes in level."
+                },
+                {
+                    icon: "fa-solid fa-ruler-horizontal",
+                    title: "Practical Design",
+                    text: "Designed for suitable entrances, thresholds, and access points."
+                },
+                {
+                    icon: "fa-solid fa-shield-halved",
+                    title: "Stable Support",
+                    text: "A stable surface can help support safer movement when correctly positioned."
+                },
+                {
+                    icon: "fa-solid fa-arrows-up-down",
+                    title: "Flexible Use",
+                    text: "Suitable for selected temporary or portable accessibility needs."
+                }
+            ],
+
+            details: [
+                "Suitable for appropriate steps, thresholds, and entrances.",
+                "Ramp length should match the height of the level change.",
+                "The ramp must be placed on a stable and suitable surface.",
+                "Weight capacity should be checked before use."
+            ],
+
+            specifications: [
+                ["Product Type", "Portable Accessibility Ramp"],
+                ["Use", "Indoor & Outdoor"],
+                ["Material", "Durable Aluminium"],
+                ["Surface", "Anti-Slip"],
+                ["Design", "Portable / Folding"],
+                ["Application", "Steps & Thresholds"]
+            ],
+
+            suitableTitle:
+                "Making Everyday Access Easier",
+
+            suitableText:
+                "Portable accessibility ramps can be useful for improving access across suitable entrances, thresholds, and small changes in level.",
+
+            suitable: [
+                "People using wheelchairs or mobility equipment.",
+                "Users who need easier access over suitable thresholds.",
+                "Families improving home accessibility.",
+                "Businesses looking for practical accessibility solutions."
+            ]
+        },
+
+
+
+        cane: {
+            category: "WALKING AIDS",
+            title: "Adjustable Walking Cane",
+            heroText:
+                "Lightweight walking support with an adjustable design for everyday mobility and stability.",
+
+            image: "Images/Adjustable walking cane.jpg",
+            price: "₹1,850",
+
+            intro:
+                "Adjustable walking canes provide lightweight support for people who need additional balance and stability during everyday movement.",
+
+            description:
+                "A walking cane should be adjusted to a suitable height so the user can maintain a comfortable and controlled position while walking. Grip comfort, stability, and tip condition are important considerations.",
+
+            features: [
+                {
+                    icon: "fa-solid fa-person-walking",
+                    title: "Walking Support",
+                    text: "Provides additional balance support during everyday movement."
+                },
+                {
+                    icon: "fa-solid fa-arrows-up-down",
+                    title: "Adjustable Height",
+                    text: "Height adjustment helps provide a more comfortable walking position."
+                },
+                {
+                    icon: "fa-solid fa-hand",
+                    title: "Comfortable Grip",
+                    text: "Designed with a practical handle for controlled everyday use."
+                },
+                {
+                    icon: "fa-solid fa-shield-halved",
+                    title: "Stable Base",
+                    text: "A suitable rubber tip helps provide dependable contact with the floor."
+                }
+            ],
+
+            details: [
+                "Height should be adjusted to suit the user's comfortable standing position.",
+                "The handle should provide a secure and comfortable grip.",
+                "The rubber tip should be checked regularly for wear.",
+                "Professional guidance can help determine suitable cane height."
+            ],
+
+            specifications: [
+                ["Product Type", "Adjustable Walking Cane"],
+                ["Use", "Indoor & Outdoor"],
+                ["Frame", "Lightweight Metal"],
+                ["Handle", "Ergonomic Grip"],
+                ["Height", "Adjustable"],
+                ["Base", "Anti-Slip Rubber Tip"]
+            ],
+
+            suitableTitle:
+                "Lightweight Support for Everyday Walking",
+
+            suitableText:
+                "An adjustable walking cane can provide useful balance and stability support for suitable users during everyday activities.",
+
+            suitable: [
+                "People who need additional walking stability.",
+                "Users looking for lightweight mobility support.",
+                "People who need adjustable walking assistance.",
+                "Users who can safely use a single-point walking aid."
+            ]
+        },
+
+
+
+        "transfer-chair": {
+            category: "PATIENT CARE",
+            title: "Patient Transfer Chair",
+            heroText:
+                "Designed to provide practical support during transfers and assisted movement at home or in care environments.",
+
+            image: "Images/Patient transfer chair.jpg",
+            price: "₹14,800",
+
+            intro:
+                "Patient transfer chairs are designed to support assisted movement and short-distance transfers in suitable home and care environments.",
+
+            description:
+                "Transfer chairs can help caregivers move users between suitable locations while providing supported seating. Product suitability depends on the user's mobility, transfer ability, environment, and required level of assistance.",
+
+            features: [
+                {
+                    icon: "fa-solid fa-wheelchair",
+                    title: "Supported Transfers",
+                    text: "Designed to assist with suitable short-distance transfers."
+                },
+                {
+                    icon: "fa-solid fa-chair",
+                    title: "Supportive Seating",
+                    text: "Provides a stable and comfortable seated position during movement."
+                },
+                {
+                    icon: "fa-solid fa-lock",
+                    title: "Locking Wheels",
+                    text: "Wheel locks can help provide stability during suitable transfer procedures."
+                },
+                {
+                    icon: "fa-solid fa-user-nurse",
+                    title: "Care Support",
+                    text: "Practical for suitable assisted movement in care environments."
+                }
+            ],
+
+            details: [
+                "Suitable for assisted transfers and short-distance movement.",
+                "Wheel locks should be engaged when appropriate during transfers.",
+                "The user's weight and mobility ability should be considered.",
+                "Caregiver guidance is recommended for safe transfer techniques."
+            ],
+
+            specifications: [
+                ["Product Type", "Patient Transfer Chair"],
+                ["Use", "Home / Care Environment"],
+                ["Frame", "Durable Metal"],
+                ["Seating", "Supportive Seat"],
+                ["Wheels", "Locking Wheels"],
+                ["Application", "Assisted Transfers"]
+            ],
+
+            suitableTitle:
+                "Practical Support for Assisted Movement",
+
+            suitableText:
+                "A patient transfer chair may be useful when additional support is needed for suitable short-distance transfers and assisted movement.",
+
+            suitable: [
+                "People requiring assisted transfers.",
+                "Users with limited independent mobility.",
+                "Families supporting mobility at home.",
+                "Care environments requiring practical transfer support."
+            ]
+        },
+
+
+
+        "walking-frame": {
+            category: "WALKING SUPPORT",
+            title: "Standard Walking Frame",
+            heroText:
+                "Simple and stable walking support for everyday indoor movement and recovery.",
+
+            image: "Images/Standard walking frame.jpg",
+            price: "₹3,900",
+
+            intro:
+                "Standard walking frames provide stable support for people who need additional assistance while walking or recovering from mobility limitations.",
+
+            description:
+                "A standard walking frame provides a broad support base and can help suitable users maintain stability during everyday indoor movement. Height adjustment and correct positioning are important for comfortable use.",
+
+            features: [
+                {
+                    icon: "fa-solid fa-person-walking",
+                    title: "Stable Walking Support",
+                    text: "Provides a broad support base for controlled everyday movement."
+                },
+                {
+                    icon: "fa-solid fa-arrows-up-down",
+                    title: "Adjustable Height",
+                    text: "Adjustable legs help accommodate different user heights."
+                },
+                {
+                    icon: "fa-solid fa-feather",
+                    title: "Lightweight Design",
+                    text: "Practical construction makes the frame easier to handle."
+                },
+                {
+                    icon: "fa-solid fa-house",
+                    title: "Home Mobility",
+                    text: "Suitable for appropriate indoor movement and daily routines."
+                }
+            ],
+
+            details: [
+                "Designed primarily for suitable indoor walking support.",
+                "Height should be adjusted to the user's needs.",
+                "Rubber tips should be checked regularly for wear.",
+                "Professional guidance can help ensure correct positioning."
+            ],
+
+            specifications: [
+                ["Product Type", "Standard Walking Frame"],
+                ["Use", "Indoor Mobility"],
+                ["Frame", "Lightweight Metal"],
+                ["Handles", "Comfort Grip"],
+                ["Height", "Adjustable"],
+                ["Base", "Non-Slip Rubber Tips"]
+            ],
+
+            suitableTitle:
+                "Simple Support for Everyday Movement",
+
+            suitableText:
+                "A standard walking frame can provide dependable support for suitable users who need additional stability during indoor walking and recovery.",
+
+            suitable: [
+                "People who need additional walking stability.",
+                "Users recovering from mobility limitations.",
+                "People who need supported indoor movement.",
+                "Users who benefit from a stable walking aid."
+            ]
         }
 
     };

@@ -1512,7 +1512,7 @@ body.light .fitting-final-cta-overlay {
    FITTING PAGE — CARD HOVER EFFECTS
 ========================================================= */
 
-/* Service Cards */
+
 .fitting-page .fitting-service-card {
     position: relative;
     overflow: hidden;
@@ -1563,7 +1563,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* Process Cards */
+
 .fitting-page .fitting-process-card {
     position: relative;
     overflow: hidden;
@@ -1621,7 +1621,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* Equipment Items */
+
 .fitting-page .fitting-equipment-item {
     transition:
         transform .3s ease,
@@ -1652,7 +1652,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* Intro Image */
+
 .fitting-page .fitting-intro-image {
     transition:
         transform .35s ease,
@@ -1668,7 +1668,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* Equipment Image */
+
 .fitting-page .fitting-equipment-image {
     transition:
         transform .35s ease,
@@ -1684,7 +1684,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* Note Card */
+
 .fitting-page .fitting-note {
     transition:
         transform .3s ease,
@@ -1714,7 +1714,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* FAQ */
+
 .fitting-page .fitting-faq-item {
     transition:
         background .25s ease,
@@ -1747,7 +1747,7 @@ body.light .fitting-final-cta-overlay {
 }
 
 
-/* Buttons */
+
 .fitting-page .btn {
     transition:
         transform .25s ease,
@@ -1805,7 +1805,7 @@ html[dir="rtl"] .fitting-page .btn:hover i {
 }
 
 
-/* =========================================================
+
 
 @media (max-width: 639px) {
 
@@ -1859,4 +1859,255 @@ html[dir="rtl"] .fitting-page .btn:hover i {
     .fitting-page .btn:hover {
         transform: none;
     }
+}
+
+.fitting-options-section {
+    width: 100%;
+    padding: 110px 0;
+    background: var(--section-bg);
+    overflow: hidden;
+}
+
+.fitting-options-header {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.fitting-options-header h2 {
+    margin-bottom: 18px;
+}
+
+.fitting-options-header p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+
+.fitting-options-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+.fitting-option-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.fitting-option-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-card);
+}
+
+
+.fitting-option-image {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    background: var(--surface-alt);
+}
+
+.fitting-option-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .45s ease;
+}
+
+.fitting-option-card:hover .fitting-option-image img {
+    transform: scale(1.05);
+}
+
+
+.fitting-option-number {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--secondary);
+    color: var(--secondary-text);
+    font-family: var(--mono);
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+
+
+.fitting-option-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 28px 24px 30px;
+}
+
+.fitting-option-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: var(--tint);
+    color: var(--secondary);
+    font-size: 1.15rem;
+}
+
+.fitting-option-label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--secondary);
+    font-family: var(--mono);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.fitting-option-content h3 {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.fitting-option-content > p {
+    margin: 0 0 20px;
+    color: var(--text-muted);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+
+
+.fitting-option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 0 0;
+    padding: 18px 0 0;
+    list-style: none;
+    border-top: 1px solid var(--border);
+}
+
+.fitting-option-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: var(--text-muted);
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.fitting-option-list i {
+    flex: 0 0 auto;
+    margin-top: 3px;
+    color: var(--secondary);
+    font-size: .72rem;
+}
+
+
+
+html[dir="rtl"] .fitting-option-number {
+    right: auto;
+    left: 16px;
+}
+
+html[dir="rtl"] .fitting-option-list li {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .fitting-option-content {
+    text-align: right;
+}
+
+
+
+@media (min-width: 1281px) {
+
+    .fitting-options-section {
+        padding: 125px 0;
+    }
+
+    .fitting-options-grid {
+        gap: 26px;
+    }
+
+    .fitting-option-image {
+        height: 225px;
+    }
+
+    .fitting-option-content {
+        padding: 30px 28px 32px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .fitting-options-section {
+        padding: 90px 0;
+    }
+
+    .fitting-options-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .fitting-option-image {
+        height: 220px;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .fitting-options-section {
+        padding: 70px 0;
+    }
+
+    .fitting-options-header {
+        margin-bottom: 40px;
+    }
+
+    .fitting-options-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .fitting-option-image {
+        height: 220px;
+    }
+
+    .fitting-option-content {
+        padding: 25px 22px 28px;
+    }
+
+    .fitting-option-content h3 {
+        font-size: 1.15rem;
+    }
+
 }
